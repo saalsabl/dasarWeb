@@ -15,3 +15,6 @@ if ($hargaProduk >= $minimumPembelian) {
 echo "Harga Produk : Rp " . number_format($hargaProduk) . "<br>";
 echo "Harga Sebelum Diskon : Rp " . number_format($hargaSebelumDiskon) . "<br>";
 echo "Diskon: " . $diskon * 100 . "% (Rp" . number_format($nilaiDiskon) . ")<br>";
+echo "Harga Setelah Diskon : Rp " . number_format($hargaSetelahDiskon) . "<br>";
+echo "<br><br>";
+?>
