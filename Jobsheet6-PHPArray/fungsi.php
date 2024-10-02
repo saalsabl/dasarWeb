@@ -14,6 +14,6 @@ echo "<hr>";
 $saya = "Icha";
 $ucapSalam = "Selamat Pagi";
 
-//memanggil lagi
+//memanggil lagi tanpa mengisi parameter salam
 perkenalan($saya);
 ?>
