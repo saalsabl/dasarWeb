@@ -38,9 +38,41 @@
     </form>
 
     <script>
-        function submitForm(){
-            alert("Data yang Anda masukkan:\n" + "Nama : " + document.getElementById("nama").value + "\n" + "Alamat : " + document.getElementById("alamat").value + "\n");
-        }
+        function submitForm() {
+            // Validasi apakah checkbox kirimData sudah dicentang
+            if (!document.getElementById("kirimData").checked) {
+                alert("Harap centang checkbox untuk mengirimkan data.");
+                return;
+            }
+
+            // Ambil nilai dari form
+            var nama = document.getElementById("nama").value;
+            var alamat = document.getElementById("alamat").value;
+            var tgllahir = document.getElementById("tgllahir").value;
+            
+            // Ambil nilai jenis kelamin yang dipilih
+            var jenisKelamin = document.querySelector('input[name="jenisKelamin"]:checked');
+            jenisKelamin = jenisKelamin ? jenisKelamin.value : "Belum dipilih";
+
+            // Ambil nilai hobby yang dicentang
+            var hobbies = [];
+            document.querySelectorAll('input[name="hobby"]:checked').forEach(function(hobby) {
+                hobbies.push(hobby.value);
+            });
+
+            // Jika tidak ada hobby yang dicentang
+            if (hobbies.length === 0) {
+                hobbies = ["Tidak ada"];
+            }
+
+            // Tampilkan data yang diinputkan
+            alert("Data yang Anda masukkan:\n" + 
+                  "Nama : " + nama + "\n" + 
+                  "Alamat : " + alamat + "\n" +
+                  "Tanggal Lahir : " + tgllahir + "\n" +
+                  "Jenis Kelamin : " + jenisKelamin + "\n" +
+                  "Hobby : " + hobbies.join(", "));
+        }     
     </script>
 </body>
 </html>
