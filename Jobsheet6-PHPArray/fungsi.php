@@ -6,5 +6,13 @@ function perkenalan(){
 }
 
 //memanggil fungsi yang sudah dibuat
-perkenalan();
+perkenalan("Hamdana", "Hallo");
+
+echo "<hr>";
+
+$saya = "Icha";
+$ucapSalam = "Selamat Pagi";
+
+//memanggil lagi
+perkenalan($saya, $ucapSalam);
 ?>
