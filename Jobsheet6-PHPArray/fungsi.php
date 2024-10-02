@@ -1,7 +1,8 @@
 <?php
-function perkenalan(){
-    echo "Assalamualaikum, ";
-    echo "Perkenalkan, nama saya Icha<br/>";
+//membuat fungsi
+function perkenalan($nama, $salam="Assalamualaikum"){
+    echo $salam.", ";
+    echo "Perkenalkan, nama saya ".$nama."<br/>";
     echo "Senang berkanalan dengan Anda<br/>";
 }
 
@@ -14,5 +15,5 @@ $saya = "Icha";
 $ucapSalam = "Selamat Pagi";
 
 //memanggil lagi
-perkenalan($saya, $ucapSalam);
+perkenalan($saya);
 ?>
