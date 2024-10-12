@@ -7,3 +7,10 @@ if (preg_match($pattern, $text)) {
     echo "<br>Tidak ada huruf kecil!";
 }
 
+$pattern = '/[0-9]+/';
+$text = 'This are 123 apples.';
+if (preg_match($pattern, $text, $matches)) {
+    echo "<br>Cocokkan : " . $matches[0];
+} else {
+    echo "<br>Tidak ada yang cocok!";
+}
