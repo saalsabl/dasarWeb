@@ -43,6 +43,16 @@
                 if (!valid) {
                     event.preventDefault();
 // Menghentikan pengiriman form jika validasi gagal
+                } else {
+                    $.ajax({
+                        url: 'proses_validasi.php',
+                        type: 'POST',
+                        data: $("#myForm").serialize(),
+                        success: function (hasil) {
+                            $("#myForm")[0].reset();
+                            alert(hasil);
+                        }
+                    })
                 }
             });
         });
