@@ -22,7 +22,7 @@
           <div class="card">
             <div class="card-body">
             <img src="nailart.jpg" style="height: 125px;">
-              <h5 class="card-title">Nailart & Eyelash Treatment</h5>
+              <h5 class="card-title">Nailart Treatment</h5>
               <p class="card-text">Want to look more stunning? Fill out the form below to book our best beauty care services.</p>
               <a href="form_nailart.php" class="btn btn-primary">Book Now!</a>
             </div>
