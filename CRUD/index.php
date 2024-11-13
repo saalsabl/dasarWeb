@@ -13,7 +13,7 @@
             <table class="table" style="margin-top: 20px;">
                 <thead>
                     <tr>
-                    <th scope="col">No</th>
+                    <th scope="col">Kode Barang</th>
                     <th scope="col">Nama Barang</th>
                     <th scope="col">Satuan</th>
                     <th scope="col">Jumlah Barang</th>
@@ -21,6 +21,7 @@
                 </thead>
                 <tbody>
                     <?php
+                    //memasukkan file koneksi
                     include "connect.php";
                     $conn = sqlsrv_connect($serverName, $connectionOptions);
                     $tsql = "Select * From Barang";

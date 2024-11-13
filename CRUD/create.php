@@ -42,7 +42,7 @@
                         <input type="text" class="form-control" id="jml_barang" name="jml_barang" >
                     </div>
                     <button
-                     type="submit" class="btn btn-primary">Tambah</button>
+                     type="submit" class="btn btn-primary">Add</button>
                 </form>
              </div>
         </div>

@@ -15,7 +15,7 @@ $tsql = "Insert into Barang values('$kode_barang','$namabarang','$satuan', '$jml
 $stmt = sqlsrv_query( $conn, $tsql);
 
 if( $stmt === false ) {
-    echo "Error in executing query.</br>";
+    echo "Error in executing query.</br>"; 
     die( print_r( sqlsrv_errors(), true));
 }
 
