@@ -26,7 +26,5 @@ if ($stmt === false) {
 // Redirect ke halaman index setelah berhasil
 header('location:index.php');
 
-// Membebaskan resource
-sqlsrv_free_stmt($stmt);
-sqlsrv_close($conn);
+
 ?>

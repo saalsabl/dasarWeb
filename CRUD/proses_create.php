@@ -20,7 +20,5 @@ if( $stmt === false ) {
 }
 
 header('location:index.php');
-sqlsrv_free_stmt( $stmt);
-sqlsrv_close($conn);
 
 ?>

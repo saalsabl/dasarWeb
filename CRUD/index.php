@@ -9,7 +9,7 @@
   <body>
     <div class="container">
     <a href="create.php" class="btn btn-primary">Add</a>
-        <form action="">
+        <form>
             <table class="table" style="margin-top: 20px;">
                 <thead>
                     <tr>

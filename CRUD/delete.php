@@ -15,7 +15,5 @@ if( $stmt === false ) {
     die( print_r( sqlsrv_errors(), true));
 }
 header('location:index.php');
-sqlsrv_free_stmt( $stmt);
-sqlsrv_close( $conn);
 
 ?>
