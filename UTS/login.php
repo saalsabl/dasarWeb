@@ -56,7 +56,7 @@
                         data: $("#myForm").serialize(),
                         success: function (hasil) {
                             $("#myForm")[0].reset();
-                            alert(hasil);
+                            // alert(hasil);
                         }
                     })
                 }
